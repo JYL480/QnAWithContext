@@ -13,7 +13,7 @@ def CreateModelandTokenizer():
 
     tokenizer = AutoTokenizer.from_pretrained(checkpoint)
     torch.manual_seed(42)
-    model.load_state_dict(torch.load(f = "model\QnAModel.pth",map_location=torch.device('cpu')))
+    model.load_state_dict(torch.load(f = "app/model/QnAModel.pth",map_location=torch.device('cpu')))
 
     return model,tokenizer
 
