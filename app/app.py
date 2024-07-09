@@ -1,5 +1,5 @@
 import streamlit as st
-from model.model import Predict
+from model import Predict
 
 st.header("BERT Question Answering with Context Model:")
 
